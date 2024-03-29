@@ -1,8 +1,4 @@
-import { LampDemo } from "@/components/ui/lamp"
 import Layout from "@/components/ui/layout"
-import { SparklesPreview } from "@/components/ui/sparkles"
-import { Lamp } from "lucide-react"
-import { Inter } from "next/font/google"
 import Image from "next/image"
 import { motion } from "framer-motion"
 import { Spotlight } from "@/components/ui/spotlight"
