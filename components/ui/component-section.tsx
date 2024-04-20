@@ -43,7 +43,7 @@ export function ContactSection({
 	}
 
 	return (
-		<section className="h-full w-full p-4">
+		<section className="h-full w-full p-4" id="contact">
 			<form
 				onSubmit={handleSubmit}
 				className="xs:px-10 xs:pb-10 flex w-full flex-col items-center justify-center gap-8 rounded-2xl border border-gray-200 bg-black px-4 py-4 pb-4 shadow dark:bg-slate-800 lg:px-20 lg:pb-20"

@@ -1,11 +1,11 @@
-import { Inter } from "next/font/google"
+import TrackDetails from "@/components/ui/track-details"
+import TrackHero from "@/components/ui/track-hero"
 
-const inter = Inter({ subsets: ["latin"] })
-
-export default function Home() {
+export default function Track() {
 	return (
-		<main
-			className={`flex min-h-screen flex-col items-center justify-between ${inter.className}`}
-		></main>
+		<>
+			<TrackHero />
+			<TrackDetails />
+		</>
 	)
 }

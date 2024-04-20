@@ -1,7 +1,8 @@
-import React, { use, useEffect } from "react"
+import React from "react"
 import { motion } from "framer-motion"
 import Link from "next/link"
 import { useRouter } from "next/router"
+import { Button } from "./button"
 
 export const Menu = ({ children }: { children: React.ReactNode }) => {
 	return (
@@ -39,14 +40,7 @@ export const HoveredLink = ({ children, ...rest }: any) => {
 	)
 }
 
-export const links = [
-	"home",
-	"about",
-	"events",
-	"track",
-	"ambassadors",
-	"contact"
-]
+export const links = ["home", "about", "events", "track", "ambassadors"]
 
 export const linkRes = (link: string) => {
 	if (link === "home") return ""

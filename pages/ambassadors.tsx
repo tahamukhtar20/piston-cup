@@ -1,11 +1,11 @@
-import { Inter } from "next/font/google"
+import AmbassadorsHero from "@/components/ui/ambassadors-hero"
+import AmbassadorsMain from "@/components/ui/ambassadors-main"
 
-const inter = Inter({ subsets: ["latin"] })
-
-export default function Home() {
+export default function Ambassadors() {
 	return (
-		<main
-			className={`flex min-h-screen flex-col items-center justify-between ${inter.className}`}
-		></main>
+		<>
+			<AmbassadorsHero />
+			<AmbassadorsMain />
+		</>
 	)
 }
