@@ -10,7 +10,7 @@ export default function AboutHero() {
 				About&nbsp;
 				<span className="text-primary">Piston Cup</span>
 			</h1>
-			<p className="mx-auto max-w-5xl rounded-xl bg-primary/50 text-center text-3xl font-normal">
+			<p className="mx-auto max-w-5xl rounded-xl bg-primary/50 p-2 text-center text-xl font-normal md:text-3xl">
 				School of Mechanical and Manufacturing Engineering at Nust
 				introduces Pakistan's first off-road racing tournament well
 				known as SMME Piston Cup. Here, different teams from all over

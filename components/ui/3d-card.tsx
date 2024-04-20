@@ -160,14 +160,15 @@ import Link from "next/link"
 
 type props = {
 	name: string
-	university: string
+	university?: string
 	image: string
+	role?: string
 }
 
-export function ThreeDCard({ name, university, image }: props) {
+export function ThreeDCard({ name, university, image, role }: props) {
 	return (
-		<CardContainer className="">
-			<CardBody className="group/card relative h-auto w-auto rounded-xl border border-black/[0.1] bg-gray-50 p-6 dark:border-white/[0.2] dark:bg-black dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] sm:w-[25rem]  ">
+		<CardContainer className="w-full">
+			<CardBody className="group/card relative h-auto w-full rounded-xl border border-black/[0.1] bg-gray-50 p-6 dark:border-white/[0.2] dark:bg-black dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] md:w-[25rem]  ">
 				<CardItem translateZ="100" className="w-full">
 					<Image
 						src={image}
@@ -184,13 +185,24 @@ export function ThreeDCard({ name, university, image }: props) {
 				>
 					{name}
 				</CardItem>
-				<CardItem
-					as="p"
-					translateZ="50"
-					className=" max-w-sm text-sm text-neutral-500 dark:text-neutral-300"
-				>
-					{university}
-				</CardItem>
+				{university && (
+					<CardItem
+						as="p"
+						translateZ="50"
+						className=" max-w-sm text-sm text-neutral-500 dark:text-neutral-300"
+					>
+						{university}
+					</CardItem>
+				)}
+				{role && (
+					<CardItem
+						as="p"
+						translateZ="50"
+						className=" max-w-sm text-xs text-neutral-500 dark:text-neutral-400"
+					>
+						{role}
+					</CardItem>
+				)}
 			</CardBody>
 		</CardContainer>
 	)

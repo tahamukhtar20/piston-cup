@@ -1,3 +1,5 @@
+import { ThreeDCard } from "./3d-card"
+
 export default function TheTeam() {
 	const team = [
 		{
@@ -19,17 +21,12 @@ export default function TheTeam() {
 
 	return (
 		<section className="flex h-full w-full flex-col bg-white py-10">
-			<h1 className="text-center text-4xl font-bold text-black">
+			<h1 className="mb-6 text-center text-5xl font-bold text-black">
 				The Team
 			</h1>
-			<div className="flex flex-row items-center justify-center gap-10 py-4">
-				{team.map(member => (
-					<Card
-						key={member.name}
-						name={member.name}
-						role={member.role}
-						image={member.image}
-					/>
+			<div className="grid gap-4 px-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+				{team.map((member, index) => (
+					<ThreeDCard {...member} key={index} />
 				))}
 			</div>
 		</section>

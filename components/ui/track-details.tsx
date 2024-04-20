@@ -3,11 +3,11 @@ import { CardBody, CardContainer, CardItem } from "./3d-card"
 
 export default function TrackDetails() {
 	return (
-		<section className="flex h-full w-full flex-col items-center justify-center gap-6 py-10 text-white">
-			<h1 className="text-center text-5xl font-bold">
+		<section className="flex h-full w-full flex-col items-center justify-start gap-6 px-4 text-white md:py-10">
+			<h1 className="text-center text-3xl font-bold md:text-5xl">
 				Our Track is Under Construction
 			</h1>
-			<p className="max-w-3xl text-center text-2xl font-normal">
+			<p className="max-w-3xl text-center text-xl font-normal md:text-2xl">
 				Its time to talk about the &nbsp;
 				<span className="text-primary">"THE RING OF FIRE"&nbsp;</span>,
 				The place where you will prove your worth and lift the glorious

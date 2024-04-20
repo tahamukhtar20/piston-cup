@@ -8,20 +8,20 @@ export function Highlights() {
 					Highlights
 				</h1>
 				<div className="grid gap-4 md:grid-cols-4">
-					<div className="col-span-1">
-						<Image
-							className="h-full w-full transition-transform duration-500 ease-in-out hover:scale-105"
-							src="/pic1.jpg"
-							alt="1"
-							width={500}
-							height={500}
-						/>
-					</div>
 					<div className="col-span-2">
 						<Image
 							className="h-full w-full transition-transform duration-500 ease-in-out hover:scale-105"
 							src="/pic2.jpg"
 							alt="2"
+							width={500}
+							height={500}
+						/>
+					</div>
+					<div className="col-span-1">
+						<Image
+							className="h-full w-full transition-transform duration-500 ease-in-out hover:scale-105"
+							src="/pic1.jpg"
+							alt="1"
 							width={500}
 							height={500}
 						/>

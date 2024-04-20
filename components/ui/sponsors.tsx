@@ -8,7 +8,7 @@ import { InfiniteMovingCards } from "./infinite-moving-cards"
 
 export function Sponsors() {
 	return (
-		<section className="flex h-full w-full flex-col items-center justify-center gap-4 py-10">
+		<section className="flex h-full w-full flex-col items-center justify-center gap-4 overflow-x-hidden py-10">
 			<div className="container mx-auto">
 				<h1 className="text-center text-4xl font-bold text-white">
 					Sponsors
