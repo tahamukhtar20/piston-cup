@@ -28,11 +28,12 @@ export default function Events() {
 				<Phase />
 
 			</div>
-			<div className=" h-60 w-full flex justify-center items-center text-center ">
+			<div className=" h-60 w-full flex flex-col md:flex-row justify-center items-center text-center ">
 				<h1 className="text-lg md:text-3xl text-primary" >Well then, what are you waiting<br /> for?</h1>
-				<button className="ml-1 md:ml-20 text-rg md:text-2xl border-2 border-primary p-2 md:p-4 rounded-md transition-transform hover:scale-110">Register Now</button>
+				<div className="flex mt-10 md:mt-0">
+				<button className=" md:ml-20 text-rg md:text-2xl border-2 border-primary p-2 md:p-4 rounded-md transition-transform hover:scale-110">Register Now</button>
 				<button className="ml-2 md:ml-10 text-rg md:text-2xl border-2 border-primary p-2 md:p-4 rounded-md transition-transform hover:scale-110">Resources</button>
-
+				</div>
 			</div>
 		</div>
 
@@ -42,10 +43,14 @@ export default function Events() {
 const Phase = () => {
 	return (
 		<div className="flex flex-col items-center w-full gap-1">
-			<div className="grid grid-cols-2 gap-2 md:gap-16 text-black w-full md:w-2/3 mb-4 ">
+			<div className="grid grid-rows-2  md:grid-cols-2 md:grid-rows-1 gap-2 md:gap-16 text-black w-full md:w-2/3 mb-4 ">
+			<div className="md:hidden flex items-center justify-center ">
+					<AnimatedImage src="/pic8.jpg" alt="3" initial={200} />
+				</div>
 				<div>
+
 					<h1 className="text-lg md:text-5xl text-primary md:mb-8">Initial Phase</h1>
-					<p className="text-sm whitespace-normal overflow-scroll md:text-xl text-secondary max-h-32 md:max-h-full">
+					<p className="text-sm whitespace-normal  md:text-xl text-secondary  md:max-h-full">
 						Initiating from 1st of March, SMME Piston Cup&apos;s founders would personally reach out to universities, encouraging the brightest and most resourceful of tech gurus to register themselves for the event.
 				
 
@@ -53,11 +58,11 @@ const Phase = () => {
 						After the completion of the registration process, the participating teams will prepare a business presentation. Moreover, a design presentation will be held along with the track inauguration on 24th of May.
 					</p>
 				</div>
-				<div className="flex items-center justify-center ">
+				<div className="hidden md:flex items-center justify-center ">
 					<AnimatedImage src="/pic8.jpg" alt="3" initial={200} />
 				</div>
 			</div>
-			<div className="grid grid-cols-2 gap-4 md:gap-16 text-black w-full md:w-2/3 ">
+			<div className="grid grid-rows-2  md:grid-cols-2 md:grid-rows-1 gap-4 md:gap-16 text-black w-full md:w-2/3 ">
 				<div className="flex items-center justify-center ">
 
 					<AnimatedImage src="/pic9.jpg" alt="3" initial={-200} />
@@ -65,7 +70,7 @@ const Phase = () => {
 				<div className="col-span-1">
 					<h1 className="text-sm md:text-5xl text-primary md:mb-8">Final Phase</h1>
 
-					<p className="text-sm whitespace-normal overflow-scroll md:text-xl text-secondary max-h-32 md:max-h-full">
+					<p className="text-sm whitespace-normal overflow-scroll md:text-xl text-secondary  md:max-h-full">
 						This final stage is when we fasten seatbelts and drive ourselves into the most-awaited point of the entire event: the race itself! After the teams submit all the required documents such as the cost report and final design.
 						<br />
 						<br />
