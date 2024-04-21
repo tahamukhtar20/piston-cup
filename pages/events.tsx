@@ -70,7 +70,7 @@ const Phase = () => {
 				<div className="col-span-1">
 					<h1 className="text-sm md:text-5xl text-primary md:mb-8">Final Phase</h1>
 
-					<p className="text-sm whitespace-normal overflow-scroll md:text-xl text-secondary  md:max-h-full">
+					<p className="text-sm whitespace-normal md:text-xl text-secondary  md:max-h-full">
 						This final stage is when we fasten seatbelts and drive ourselves into the most-awaited point of the entire event: the race itself! After the teams submit all the required documents such as the cost report and final design.
 						<br />
 						<br />
