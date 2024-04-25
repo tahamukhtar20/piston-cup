@@ -8,7 +8,7 @@ export default function AboutHero() {
 		>
 			<h1 className="text-center text-7xl font-bold">
 				About&nbsp;
-				<span className="text-primary">Piston Cup</span>
+				<span className="text-primary">SMME Piston Cup</span>
 			</h1>
 			<p className="mx-auto max-w-5xl rounded-xl bg-primary/50 p-2 text-center text-xl font-normal md:text-3xl">
 				School of Mechanical and Manufacturing Engineering at Nust
