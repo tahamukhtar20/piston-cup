@@ -37,7 +37,7 @@ export function Highlights() {
 					</div>
 					<div className="col-span-2">
 						<Image
-							src="/pic5.jpg"
+							src="/pic14.jpg"
 							alt="2"
 							className="h-full w-full transition-transform duration-500 ease-in-out hover:scale-105"
 							width={500}
@@ -47,7 +47,7 @@ export function Highlights() {
 					<div className="col-span-1">
 						<Image
 							className="h-full w-full transition-transform duration-500 ease-in-out hover:scale-105"
-							src="/pic4.jpg"
+							src="/pic10.jpg"
 							alt="3"
 							width={500}
 							height={500}
