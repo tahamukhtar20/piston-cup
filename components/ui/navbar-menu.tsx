@@ -40,7 +40,7 @@ export const HoveredLink = ({ children, ...rest }: any) => {
 	)
 }
 
-export const links = ["home", "about", "events", "track", "ambassadors"]
+export const links = ["home", "about", "events", "track", "register"]
 
 export const linkRes = (link: string) => {
 	if (link === "home") return ""
@@ -51,11 +51,17 @@ export const Header = () => {
 	return (
 		<header className="fixed left-0 top-0 z-[9999] flex w-full items-center justify-center bg-inherit text-xl">
 			<Menu>
-				{links.map(link => (
-					<HoveredLink key={link} href={`/${linkRes(link)}`}>
-						{link}
-					</HoveredLink>
-				))}
+				{links.map(link =>
+					link === "register" ? (
+						<HoveredLink key={link} href="">
+							{link}
+						</HoveredLink>
+					) : (
+						<HoveredLink key={link} href={`/${linkRes(link)}`}>
+							{link}
+						</HoveredLink>
+					)
+				)}
 			</Menu>
 		</header>
 	)
