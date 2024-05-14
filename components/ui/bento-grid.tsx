@@ -58,7 +58,7 @@ const cards = [
 		id: 1,
 		content: <SkeletonOne />,
 		className: "col-span-1",
-		thumbnail: "/car.jpeg"
+		thumbnail: "/pic11.jpg"
 	},
 	{
 		id: 2,

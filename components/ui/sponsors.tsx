@@ -30,12 +30,6 @@ export function Sponsors() {
 							3 March 2023 Extended till 15 April 2023
 						</AccordionContent>
 					</AccordionItem>
-					<AccordionItem value="item-2">
-						<AccordionTrigger>
-							Preliminary Session with Registered Teams
-						</AccordionTrigger>
-						<AccordionContent>27 March 2023</AccordionContent>
-					</AccordionItem>
 					<AccordionItem value="item-3">
 						<AccordionTrigger>
 							Registerations Close
