@@ -53,7 +53,10 @@ export const Header = () => {
 			<Menu>
 				{links.map(link =>
 					link === "register" ? (
-						<HoveredLink key={link} href="">
+						<HoveredLink
+							key={link}
+							href="https://docs.google.com/forms/d/e/1FAIpQLSfOl5b7z3LF6V_PCBuN4W6C1E00Ho1_hD6MEiV9uj4A-jQNdw/viewform"
+						>
 							{link}
 						</HoveredLink>
 					) : (

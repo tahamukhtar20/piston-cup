@@ -29,12 +29,11 @@ export function Hero() {
 				</h1>
 
 				<p className="mx-auto mt-4 max-w-lg text-center text-lg font-normal text-neutral-300">
-					SMME Piston Cup is Pakistan&apos;s very first collegiate
-					level off-road racing tournament being held at National
-					University of Science and Technology, Nust. Teams will
-					design, build, and race their cars for a chance to lift the
-					SMME piston cup and prove their competence in automotive
-					engineering.
+					The SMME Piston Cup marks Pakistan&apos;s first ever
+					university-affiliated off-road racing tournament! Held at
+					NUST, this milestone of an event encourages students to
+					showcase prowess in automotive engineering and driving by
+					crafting, constructing and competing their vehicles.
 				</p>
 			</motion.div>
 		</section>
