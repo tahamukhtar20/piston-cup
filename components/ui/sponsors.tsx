@@ -27,7 +27,7 @@ export function Sponsors() {
 					<AccordionItem value="item-1">
 						<AccordionTrigger>Registrations Open</AccordionTrigger>
 						<AccordionContent>
-							3 March 2023 Extended till 15 April 2023
+							30 April 2024 Extended till 10 June 2024
 						</AccordionContent>
 					</AccordionItem>
 					<AccordionItem value="item-3">
@@ -35,24 +35,10 @@ export function Sponsors() {
 							Registerations Close
 						</AccordionTrigger>
 						<AccordionContent>
-							Extended till 15 April 2023
+							Extended till 30 April 2023
 						</AccordionContent>
 					</AccordionItem>
-					<AccordionItem value="item-4">
-						<AccordionTrigger>Initial Phase</AccordionTrigger>
-						<AccordionContent>
-							19th May 2023 Design Presentation Track Inauguration
-							Business Presentation Auto Show
-						</AccordionContent>
-					</AccordionItem>
-					<AccordionItem value="item-5">
-						<AccordionTrigger>
-							Car Fabrication and Progress Reports
-						</AccordionTrigger>
-						<AccordionContent>
-							25 May - 30 Oct 2023
-						</AccordionContent>
-					</AccordionItem>
+					
 					<AccordionItem value="item-6">
 						<AccordionTrigger>Final Phase</AccordionTrigger>
 						<AccordionContent>
@@ -69,6 +55,5 @@ const testimonials = [
 	"/sponsors/1.png",
 	"/sponsors/2.png",
 	"/sponsors/3.png",
-	"/sponsors/4.png",
 	"/sponsors/5.png"
 ]
