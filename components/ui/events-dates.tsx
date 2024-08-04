@@ -2,7 +2,7 @@ export default function EventsDates() {
     const team = [
         {
             day: "Day 1",
-            events: [["Welcome Teams", "9 AM"], ["Parks cars at Designated Areas", "before 5 PM"], ["Car show", "5:30-10 PM"]],
+            events: [["Welcome Teams"], ["Parks cars at Designated Areas", "before 5 PM"], ["Car show", "5:30-10 PM"]],
         },
         {
             day: "Day 2",
@@ -50,7 +50,7 @@ export const Card = ({
                         return(
                             <div className="flex justify-between ">
                             <p className="text-sm md:text-lg font-normal text-neutral-500 ">{event[0]}</p>
-                            <p className="text-sm font-normal text-neutral-500 ">{event[1]}</p>
+                            
     
                         </div>
                         )

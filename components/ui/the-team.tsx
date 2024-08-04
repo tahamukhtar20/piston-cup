@@ -3,19 +3,29 @@ import { ThreeDCard } from "./3d-card"
 export default function TheTeam() {
 	const team = [
 		{
-			name: "John Doe",
-			role: "CEO",
-			image: "https://source.unsplash.com/random/?Cryptocurrency&1"
+			name: "Maaz Ali",
+			role: "President",
+			image: "/Maaz.jpeg"
 		},
 		{
-			name: "Jane Doe",
-			role: "CTO",
-			image: "https://source.unsplash.com/random/?Cryptocurrency&1"
+			name: "Muhammd Ahmed",
+			role: "VP Media",
+			image: "/vp.jpeg"
 		},
 		{
-			name: "John Smith",
-			role: "COO",
-			image: "https://source.unsplash.com/random/?Cryptocurrency&1"
+			name: "Rameela Adil",
+			role: "VP Outreach",
+			image: "/rameela.jpg"
+		},
+		{
+			name: "Ahmad Ayub",
+			role: "VP Technical",
+			image: "/usmanAyub.png"
+		},
+		{
+			name: "Asjad Ali",
+			role: "VP Operations",
+			image: "/asjadAli.jpg"
 		}
 	]
 
@@ -24,7 +34,7 @@ export default function TheTeam() {
 			<h1 className="mb-6 text-center text-5xl font-bold text-black">
 				The Team
 			</h1>
-			<div className="grid gap-4 px-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+			<div className="grid gap-4 px-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
 				{team.map((member, index) => (
 					<ThreeDCard {...member} key={index} />
 				))}
