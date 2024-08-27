@@ -20,7 +20,7 @@ export function Highlights() {
 					<div className="col-span-1">
 						<Image
 							className="h-full w-full transition-transform duration-500 ease-in-out hover:scale-105"
-							src="/pic1.jpg"
+							src="/revision2.jpg"
 							alt="1"
 							width={500}
 							height={500}
@@ -29,7 +29,7 @@ export function Highlights() {
 					<div className="col-span-1">
 						<Image
 							className="h-full w-full transition-transform duration-500 ease-in-out hover:scale-105"
-							src="/pic3.jpg"
+							src="/revision4.jpg"
 							alt="3"
 							width={500}
 							height={500}
@@ -47,7 +47,7 @@ export function Highlights() {
 					<div className="col-span-1">
 						<Image
 							className="h-full w-full transition-transform duration-500 ease-in-out hover:scale-105"
-							src="/pic10.jpg"
+							src="/revision3.jpg"
 							alt="3"
 							width={500}
 							height={500}
@@ -56,7 +56,7 @@ export function Highlights() {
 					<div className="col-span-1">
 						<Image
 							className="h-full w-full transition-transform duration-500 ease-in-out hover:scale-105"
-							src="/pic6.jpg"
+							src="/revision5.jpg"
 							alt="3"
 							width={500}
 							height={500}

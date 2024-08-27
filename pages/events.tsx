@@ -34,6 +34,7 @@ export default function Events() {
 				</h3>
 				<EventsDates />
 				<Phase />
+				<AutoShow/>
 			</div>
 			<div className="flex w-full flex-col items-center justify-center gap-4 pt-20 text-center">
 				<h1 className="text-lg text-primary md:text-3xl">
@@ -44,6 +45,24 @@ export default function Events() {
 						Register Now
 					</button>
 				</div>
+			</div>
+		</div>
+	)
+}
+const AutoShow = () => {
+	return(
+		<div className="mt-10  md:px-20 w-full">
+			<p className="text-6xl font-bold text-primary w-full text-center">EXCLUSIVE AUTO SHOW</p>
+			<p className="text-base font-normal text-white"></p>
+			<div className="h-72 flex  flex-row my-10 gap-2 justify-center item-center w-full overflow-x-auto"> 
+				<img src="/newHighlight.jpeg" className="object-cover h-72"/>
+				<img src="/pic1.jpg" className="object-cover h-72"/>
+				<img src="/pic2.jpg" className="object-cover h-72"/>
+				<img src="/pic3.jpg" className="object-cover h-72"/>
+				<img src="/pic4.jpg" className="object-cover h-72"/>
+				<img src="/pic5.jpg" className="object-cover h-72"/>
+				
+				
 			</div>
 		</div>
 	)
