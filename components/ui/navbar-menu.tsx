@@ -24,23 +24,37 @@ export const Menu = ({ children }: { children: React.ReactNode }) => {
 export const HoveredLink = ({ children, ...rest }: any) => {
 	const router = useRouter()
 	const currentPage = router.pathname
-	return (
-		<Link
-			{...rest}
-			className="group relative z-10 capitalize text-neutral-200 transition-all duration-200 hover:scale-105 hover:text-white"
-		>
-			{children}
-			<h1
-				className={`cubic-bezier(0.4, 0, 0.2, 1) absolute
-        h-1 rounded-full transition-all duration-300 group-hover:w-full
-        ${currentPage === rest.href ? "w-full bg-primary" : "w-0 bg-white"}
-        `}
-			/>
-		</Link>
-	)
+	console.log(rest.href)
+	if (rest.href === "/ruleBook") {
+		console.log("=>",)
+		return(
+			<Link href="" className="group relative z-10 capitalize text-neutral-200 transition-all duration-200 hover:scale-105 hover:text-white" onClick={()=>{window.open("/rulebook.pdf",'_blank')}}  >
+      			Rulebook
+				<h1 className={`cubic-bezier(0.4, 0, 0.2, 1) absolute h-1 rounded-full transition-all duration-300 group-hover:w-full ${currentPage === rest.href ? "w-full bg-primary" : "w-0 bg-white"}`}/> 
+   			 </Link>
+		)
+	}else{
+		return (
+
+			<Link
+				{...rest}
+				className="group relative z-10 capitalize text-neutral-200 transition-all duration-200 hover:scale-105 hover:text-white"
+			>
+				{children}
+				<h1
+					className={`cubic-bezier(0.4, 0, 0.2, 1) absolute
+			h-1 rounded-full transition-all duration-300 group-hover:w-full
+			${currentPage === rest.href ? "w-full bg-primary" : "w-0 bg-white"}
+			`}
+				/> 
+			</Link>
+		)
+	}
+
+	
 }
 
-export const links = ["home", "about", "events", "track", "register"]
+export const links = ["home", "about", "events", "track", "register","ruleBook"]
 
 export const linkRes = (link: string) => {
 	if (link === "home") return ""
@@ -53,7 +67,7 @@ export const Header = () => {
 			<Menu>
 				{links.map(link =>
 					link === "register" ? (
-						<HoveredLink
+						<HoveredLink 
 							key={link}
 							href="https://docs.google.com/forms/d/e/1FAIpQLSfOl5b7z3LF6V_PCBuN4W6C1E00Ho1_hD6MEiV9uj4A-jQNdw/viewform"
 						>

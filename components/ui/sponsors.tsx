@@ -45,6 +45,12 @@ export function Sponsors() {
 							Testing Final Race Social
 						</AccordionContent>
 					</AccordionItem>
+					<AccordionItem value="item-5">
+						<AccordionTrigger>Prize Pool</AccordionTrigger>
+						<AccordionContent>
+							600,000 PKR
+						</AccordionContent>
+					</AccordionItem>
 				</Accordion>
 			</div>
 		</section>
@@ -54,6 +60,5 @@ export function Sponsors() {
 const testimonials = [
 	"/sponsors/1.png",
 	"/sponsors/2.png",
-	"/sponsors/3.png",
 	"/sponsors/5.png"
 ]

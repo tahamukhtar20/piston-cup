@@ -11,7 +11,7 @@ export function Highlights() {
 					<div className="col-span-2">
 						<Image
 							className="h-full w-full transition-transform duration-500 ease-in-out hover:scale-105"
-							src="/pic2.jpg"
+							src="/revision1.jpg"
 							alt="2"
 							width={500}
 							height={500}
