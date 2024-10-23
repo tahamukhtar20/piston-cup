@@ -84,7 +84,7 @@ const BrandLaunch = () => {
 				<img src="/IMG_1592.PNG" className="h-72 object-cover" />
 			</div>
 			<div className="item-center my-10  flex h-72 w-full flex-row justify-center gap-2 overflow-x-auto">
-				<img src="/IMG_1593.PNG" className="h-72 object-cover" />
+				{/* <img src="/IMG_1593.PNG" className="h-72 object-cover" /> */}
 				<img src="/IMG_1594.PNG" className="h-72 object-cover" />
 				<img src="/IMG_1595.PNG" className="h-72 object-cover" />
 				<img src="/IMG_1599.PNG" className="h-72 object-cover" />
