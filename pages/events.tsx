@@ -34,7 +34,8 @@ export default function Events() {
 				</h3>
 				<EventsDates />
 				<Phase />
-				<AutoShow/>
+				<AutoShow />
+				<BrandLaunch />
 			</div>
 			<div className="flex w-full flex-col items-center justify-center gap-4 pt-20 text-center">
 				<h1 className="text-lg text-primary md:text-3xl">
@@ -50,19 +51,45 @@ export default function Events() {
 	)
 }
 const AutoShow = () => {
-	return(
-		<div className="mt-10  md:px-20 w-full">
-			<p className="text-6xl font-bold text-primary w-full text-center">EXCLUSIVE AUTO SHOW</p>
+	return (
+		<div className="mt-10  w-full md:px-20">
+			<p className="w-full text-center text-6xl font-bold text-primary">
+				EXCLUSIVE AUTO SHOW
+			</p>
 			<p className="text-base font-normal text-white"></p>
-			<div className="h-72 flex  flex-row my-10 gap-2 justify-center item-center w-full overflow-x-auto"> 
-				<img src="/newHighlight.jpeg" className="object-cover h-72"/>
-				<img src="/pic1.jpg" className="object-cover h-72"/>
-				<img src="/pic2.jpg" className="object-cover h-72"/>
-				<img src="/pic3.jpg" className="object-cover h-72"/>
-				<img src="/pic4.jpg" className="object-cover h-72"/>
-				<img src="/pic5.jpg" className="object-cover h-72"/>
-				
-				
+			<div className="item-center my-10  flex h-72 w-full flex-row justify-center gap-2 overflow-x-auto">
+				<img src="/newHighlight.jpeg" className="h-72 object-cover" />
+				<img src="/pic1.jpg" className="h-72 object-cover" />
+				<img src="/pic2.jpg" className="h-72 object-cover" />
+				<img src="/pic3.jpg" className="h-72 object-cover" />
+				<img src="/pic4.jpg" className="h-72 object-cover" />
+				<img src="/pic5.jpg" className="h-72 object-cover" />
+			</div>
+		</div>
+	)
+}
+const BrandLaunch = () => {
+	return (
+		<div className="mt-10  w-full md:px-20">
+			<p className="w-full text-center text-6xl font-bold text-primary">
+				BRAND LAUNCH
+			</p>
+			<p className="text-base font-normal text-white"></p>
+			<div className="item-center my-10  flex h-72 w-full flex-row justify-center gap-2 overflow-x-auto">
+				<img src="/IMG_1586.PNG" className="h-72 object-cover" />
+				<img src="/IMG_1588.PNG" className="h-72 object-cover" />
+				<img src="/IMG_1589.PNG" className="h-72 object-cover" />
+				<img src="/IMG_1590.PNG" className="h-72 object-cover" />
+				<img src="/IMG_1591.PNG" className="h-72 object-cover" />
+				<img src="/IMG_1592.PNG" className="h-72 object-cover" />
+			</div>
+			<div className="item-center my-10  flex h-72 w-full flex-row justify-center gap-2 overflow-x-auto">
+				{/* <img src="/IMG_1593.PNG" className="h-72 object-cover" /> */}
+				<img src="/IMG_1594.PNG" className="h-72 object-cover" />
+				<img src="/IMG_1595.PNG" className="h-72 object-cover" />
+				<img src="/IMG_1599.PNG" className="h-72 object-cover" />
+				<img src="/IMG_1602.PNG" className="h-72 object-cover" />
+				<img src="/IMG_1605.PNG" className="h-72 object-cover" />
 			</div>
 		</div>
 	)
