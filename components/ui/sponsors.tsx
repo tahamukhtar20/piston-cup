@@ -35,21 +35,20 @@ export function Sponsors() {
 							Registerations Close
 						</AccordionTrigger>
 						<AccordionContent>
-							Extended till 30 April 2023
+							Extended till 10 June 2024
 						</AccordionContent>
 					</AccordionItem>
-					
+
 					<AccordionItem value="item-6">
 						<AccordionTrigger>Final Phase</AccordionTrigger>
 						<AccordionContent>
-							Testing Final Race Social
+							The Event will be helf on 22nd, 23rd and 24th of
+							November 2024
 						</AccordionContent>
 					</AccordionItem>
 					<AccordionItem value="item-5">
 						<AccordionTrigger>Prize Pool</AccordionTrigger>
-						<AccordionContent>
-							600,000 PKR
-						</AccordionContent>
+						<AccordionContent>600,000 PKR</AccordionContent>
 					</AccordionItem>
 				</Accordion>
 			</div>
@@ -57,8 +56,4 @@ export function Sponsors() {
 	)
 }
 
-const testimonials = [
-	"/sponsors/1.png",
-	"/sponsors/2.png",
-	"/sponsors/5.png"
-]
+const testimonials = ["/sponsors/1.png", "/sponsors/2.png", "/sponsors/5.png"]
