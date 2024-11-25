@@ -14,8 +14,7 @@ export default function Popup() {
 		>
 			<div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform bg-primary p-8 py-12">
 				<h1 className="text-center text-2xl font-bold">
-					The Event will be held on 22nd, 23rd and 24th of November
-					2024!
+					The Event will be held on 6th, 7th & 8th of December 2024!
 				</h1>
 				<button
 					onClick={() => setPopup(false)}

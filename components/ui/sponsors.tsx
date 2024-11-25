@@ -42,8 +42,8 @@ export function Sponsors() {
 					<AccordionItem value="item-6">
 						<AccordionTrigger>Final Phase</AccordionTrigger>
 						<AccordionContent>
-							The Event will be helf on 22nd, 23rd and 24th of
-							November 2024
+							The Event will be helf on 6th, 7th & 8th of December
+							2024
 						</AccordionContent>
 					</AccordionItem>
 					<AccordionItem value="item-5">
