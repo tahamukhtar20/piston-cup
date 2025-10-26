@@ -3,29 +3,34 @@ import { ThreeDCard } from "./3d-card"
 export default function TheTeam() {
 	const team = [
 		{
-			name: "Maaz Ali",
-			role: "President",
-			image: "/Maaz.jpeg"
-		},
-		{
-			name: "Muhammd Ahmed",
-			role: "VP Media",
-			image: "/vp.jpeg"
-		},
-		{
-			name: "Rameela Adil",
-			role: "VP Outreach",
-			image: "/rameela.jpg"
-		},
-		{
-			name: "Ahmad Ayub",
-			role: "VP Technical",
-			image: "/usmanAyub.png"
-		},
-		{
 			name: "Asjad Ali",
+			role: "President",
+			image: "/team/asjad_ali.jpeg"
+		},
+		{
+			name: "Aarish Sajid",
 			role: "VP Operations",
-			image: "/asjadAli.jpg"
+			image: "/team/aarish_sajid.jpg"
+		},
+		{
+			name: "Asmawiya Maeen",
+			role: "VP Media",
+			image: "/team/vp.jpeg"
+		},
+		{
+			name: "Faraz Haider",
+			role: "VP Technical",
+			image: "/team/faraz_haider.png"
+		},
+		{
+			name: "Rabia Bilal",
+			role: "VP Resource",
+			image: "/team/rabia_bilal.jpeg"
+		},
+		{
+			name: "Shahmir Ahmed",
+			role: "VP Outreach",
+			image: "/team/shahmir_ahmed.jpeg"
 		}
 	]
 
