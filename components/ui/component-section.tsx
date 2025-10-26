@@ -58,10 +58,10 @@ export function ContactSection({
 					</div>
 					<div className="border-2 border-gray-500 rounded-xl"></div>
 
-					<div className="flex  justify-between px-14">
+					<div className="flex  justify-between px-1">
 						<div >
 						<h1 className="text-xl text-gray-400">Shamir Ahmad</h1>
-						<p className="text-xl text-gray-400">+92 342 7763771</p>
+						<p className="text-xl text-gray-400 ">+92 342 7763771</p>
 
 						</div>
 						<div>
