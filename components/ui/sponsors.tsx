@@ -27,7 +27,7 @@ export function Sponsors() {
 					<AccordionItem value="item-1">
 						<AccordionTrigger>Registrations Open</AccordionTrigger>
 						<AccordionContent>
-							30 April 2024 Extended till 10 June 2024
+							05 August 2025 Extended till 30 October 2025
 						</AccordionContent>
 					</AccordionItem>
 					<AccordionItem value="item-3">
@@ -35,15 +35,15 @@ export function Sponsors() {
 							Registerations Close
 						</AccordionTrigger>
 						<AccordionContent>
-							Extended till 10 June 2024
+							Extended till 30th October 2025
 						</AccordionContent>
 					</AccordionItem>
 
 					<AccordionItem value="item-6">
 						<AccordionTrigger>Final Phase</AccordionTrigger>
 						<AccordionContent>
-							The Event will be helf on 6th, 7th & 8th of December
-							2024
+							The Event will be helf on 13th, 14th & 15th of Febuary
+							2026
 						</AccordionContent>
 					</AccordionItem>
 					<AccordionItem value="item-5">

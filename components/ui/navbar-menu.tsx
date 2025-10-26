@@ -33,7 +33,32 @@ export const HoveredLink = ({ children, ...rest }: any) => {
 				<h1 className={`cubic-bezier(0.4, 0, 0.2, 1) absolute h-1 rounded-full transition-all duration-300 group-hover:w-full ${currentPage === rest.href ? "w-full bg-primary" : "w-0 bg-white"}`}/> 
    			 </Link>
 		)
-	}else{
+	}
+		if (rest.href === "/magazine") {
+		return (
+			<div className="group relative z-10 capitalize text-neutral-200 transition-all duration-200 hover:scale-105 hover:text-white cursor-pointer">
+				<span>Magazine</span>
+				<h1
+					className={`cubic-bezier(0.4, 0, 0.2, 1) absolute h-1 rounded-full transition-all duration-300 group-hover:w-full ${currentPage === rest.href ? "w-full bg-primary" : "w-0 bg-white"
+						}`}
+				/>
+				<div className="absolute left-0 top-full mt-2 hidden w-40 rounded-md bg-black border border-white/20 shadow-lg group-hover:block overflow-hidden ">
+					<button
+						onClick={() => window.open("/magazine-2024.pdf", "_blank")}
+						className="block w-full px-4 py-2 text-left text-neutral-200 hover:bg-white/10"
+					>
+						2024 Edition
+					</button>
+					<button
+						onClick={() => window.open("/magazine-2023.pdf", "_blank")}
+						className="block w-full px-4 py-2 text-left text-neutral-200 hover:bg-white/10"
+					>
+						2023 Edition
+					</button>
+				</div>
+			</div>
+		)
+	}
 		return (
 
 			<Link
@@ -54,7 +79,7 @@ export const HoveredLink = ({ children, ...rest }: any) => {
 	
 }
 
-export const links = ["home", "about", "events", "track", "register","ruleBook"]
+export const links = ["home", "about", "events", "track", "register","ruleBook","magazine"]
 
 export const linkRes = (link: string) => {
 	if (link === "home") return ""
@@ -69,7 +94,7 @@ export const Header = () => {
 					link === "register" ? (
 						<HoveredLink 
 							key={link}
-							href="https://docs.google.com/forms/d/e/1FAIpQLSfOl5b7z3LF6V_PCBuN4W6C1E00Ho1_hD6MEiV9uj4A-jQNdw/viewform"
+							href="https://docs.google.com/forms/d/e/1FAIpQLSe1IiWYTljtV9eNcXCHv_Bsn6pEXa9M0eGhM8N07tRLuXTA0g/viewform"
 						>
 							{link}
 						</HoveredLink>
