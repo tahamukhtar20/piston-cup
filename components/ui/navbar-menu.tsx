@@ -77,7 +77,6 @@ export const HoveredLink = ({ children, ...rest }: any) => {
 	}
 
 	
-}
 
 export const links = ["home", "about", "events", "track", "register","ruleBook","magazine"]
 
