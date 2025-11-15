@@ -44,13 +44,13 @@ export const HoveredLink = ({ children, ...rest }: any) => {
 				/>
 				<div className="absolute left-0 top-full mt-2 hidden w-40 rounded-md bg-black border border-white/20 shadow-lg group-hover:block overflow-hidden ">
 					<button
-						onClick={() => window.open("/magazine-2024.pdf", "_blank")}
+						onClick={() => window.open("/magazines-2024.pdf", "_blank")}
 						className="block w-full px-4 py-2 text-left text-neutral-200 hover:bg-white/10"
 					>
 						2024 Edition
 					</button>
 					<button
-						onClick={() => window.open("/magazine-2023.pdf", "_blank")}
+						onClick={() => window.open("/magazines-2023.pdf", "_blank")}
 						className="block w-full px-4 py-2 text-left text-neutral-200 hover:bg-white/10"
 					>
 						2023 Edition
