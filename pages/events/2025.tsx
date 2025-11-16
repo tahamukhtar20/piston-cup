@@ -7,22 +7,9 @@ export default function Events() {
         <div className="flex w-full flex-col">
             <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-black via-bgGray to-black">
                 <div className="w-2/3 flex-row text-center">
-                    <h1 className="bg text-7xl">Events</h1>
-
-                    <p className="text-sm md:text-lg ">
-                        For the first time in the history of Pakistan, School of
-                        Mechanical and Manufacturing Engineering (SMME) brings
-                        to you the SMME Piston Cup!
-                    </p>
+                    <h1 className="bg text-7xl">Event 2025</h1>
                     <p className="hidden text-sm md:block md:text-lg">
-                        The novel edition of Pakistan's first-ever collegiate
-                        level off-road racing competition is a dream-come-true
-                        for car enthusiasts and motorsports fans alike. The best
-                        and brightest from all over Pakistan would come together
-                        as college teams to compete in what would be the most
-                        intensely adrenaline-inducing University-level racing
-                        contest in Pakistan yet! The event itself is divided
-                        into three elaborate stages.
+                        Marking the third edition of Pakistan's groundbreaking collegiate off-road racing competition, Event 2025 is set to elevate the thrill to an unprecedented level. Teams from universities across the country will return to push boundaries, showcase innovation, and battle for supremacy in one of the most exhilarating motorsports challenges in Pakistan. This edition continues the tradition with three dynamic stages that promise unmatched excitement, fierce competition, and unforgettable racing moments.
                     </p>
                 </div>
             </div>
@@ -34,8 +21,8 @@ export default function Events() {
                 </h3>
                 <EventsDates />
                 <Phase />
-                <AutoShow />
-                <BrandLaunch />
+                {/* <AutoShow />
+                <BrandLaunch /> */}
             </div>
             <div className="flex w-full flex-col items-center justify-center gap-4 pt-20 text-center">
                 <h1 className="text-lg text-primary md:text-3xl">
@@ -107,17 +94,17 @@ const Phase = () => {
                         Initial Phase
                     </h1>
                     <p className="whitespace-normal text-sm  text-secondary md:max-h-full  md:text-xl">
-                        Initiating from 1st of March, SMME Piston Cup&apos;s
-                        founders would personally reach out to universities,
-                        encouraging the brightest and most resourceful of tech
-                        gurus to register themselves for the event. We aim to
-                        provide them with a platform to showcase their talents,
-                        hard work and innovation to the world.
+                        Beginning from the 5th of August 2025, the SMME Piston Cup
+                        team will once again reach out to universities nationwide,
+                        inviting the most skilled and talented students to register for
+                        the third edition of this groundbreaking competition. Our goal
+                        remains to offer young innovators a platform to showcase their
+                        creativity, engineering skills, and passion for motorsports.
                         <br />
                         After the completion of the registration process, the
                         participating teams will prepare a business
                         presentation. Moreover, a design presentation will be
-                        held along with the track inauguration on 24th of May.
+                        held along with the track inauguration on 13th of February.
                     </p>
                 </div>
             </div>
@@ -138,7 +125,7 @@ const Phase = () => {
                         design.
                         <br />
                         <br />
-                        The race event will be held in the November of 2023 when
+                        The race event will be held in the February of 2026 when
                         the hard work and innovation of the participating teams
                         will culminate in a breath-taking competition.
                     </p>

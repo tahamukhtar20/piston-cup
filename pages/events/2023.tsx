@@ -7,12 +7,12 @@ export default function Events() {
         <div className="flex w-full flex-col">
             <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-black via-bgGray to-black">
                 <div className="w-2/3 flex-row text-center">
-                    <h1 className="bg text-7xl">Events</h1>
+                    <h1 className="bg text-7xl">Event 2023</h1>
 
                     <p className="text-sm md:text-lg ">
                         For the first time in the history of Pakistan, School of
-                        Mechanical and Manufacturing Engineering (SMME) brings
-                        to you the SMME Piston Cup!
+                        Mechanical and Manufacturing Engineering (SMME) brought
+                        the SMME Piston Cup!
                     </p>
                     <p className="hidden text-sm md:block md:text-lg">
                         The novel edition of Pakistan's first-ever collegiate
@@ -28,16 +28,16 @@ export default function Events() {
             </div>
 
             <div className="flex  w-full flex-col items-center bg-white p-10 ">
-                <h1 className="text-7xl text-primary">Event Plan</h1>
+                {/* <h1 className="text-7xl text-primary">Event Plan</h1>
                 <h3 className="text-4xl text-secondary">
                     13 Feb - 15 Feb 2026
                 </h3>
                 <EventsDates />
-                <Phase />
+                <Phase /> */}
                 <AutoShow />
                 <BrandLaunch />
             </div>
-            <div className="flex w-full flex-col items-center justify-center gap-4 pt-20 text-center">
+            {/* <div className="flex w-full flex-col items-center justify-center gap-4 pt-20 text-center">
                 <h1 className="text-lg text-primary md:text-3xl">
                     Well then, what are you waiting for?
                 </h1>
@@ -46,7 +46,7 @@ export default function Events() {
                         Register Now
                     </button>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }
@@ -59,11 +59,11 @@ const AutoShow = () => {
             <p className="text-base font-normal text-white"></p>
             <div className="item-center my-10  flex h-72 w-full flex-row justify-center gap-2 overflow-x-auto">
                 <img src="/newHighlight.jpeg" className="h-72 object-cover" />
-                <img src="/pic1.jpg" className="h-72 object-cover" />
-                <img src="/pic2.jpg" className="h-72 object-cover" />
-                <img src="/pic3.jpg" className="h-72 object-cover" />
-                <img src="/pic4.jpg" className="h-72 object-cover" />
-                <img src="/pic5.jpg" className="h-72 object-cover" />
+                <img src="/2023AS1.jpeg" className="h-72 object-cover" />
+                <img src="/2023AS2.jpeg" className="h-72 object-cover" />
+                <img src="/2023AS3.jpeg" className="h-72 object-cover" />
+                <img src="/2023AS4.jpeg" className="h-72 object-cover" />
+                <img src="/2023AS6.jpeg" className="h-72 object-cover" />
             </div>
         </div>
     )
@@ -76,20 +76,17 @@ const BrandLaunch = () => {
             </p>
             <p className="text-base font-normal text-white"></p>
             <div className="item-center my-10  flex h-72 w-full flex-row justify-center gap-2 overflow-x-auto">
-                <img src="/IMG_1586.PNG" className="h-72 object-cover" />
-                <img src="/IMG_1588.PNG" className="h-72 object-cover" />
-                <img src="/IMG_1589.PNG" className="h-72 object-cover" />
-                <img src="/IMG_1590.PNG" className="h-72 object-cover" />
-                <img src="/IMG_1591.PNG" className="h-72 object-cover" />
-                <img src="/IMG_1592.PNG" className="h-72 object-cover" />
+                <img src="/2023BL1.jpeg" className="h-72 object-cover" />
+                <img src="/2023BL2.jpeg" className="h-72 object-cover" />
+                <img src="/social.jpeg" className="h-72 object-cover" />
             </div>
-            <div className="item-center my-10  flex h-72 w-full flex-row justify-center gap-2 overflow-x-auto">
+             <div>{/* <div > className="item-center my-10  flex h-72 w-full flex-row justify-center gap-2 overflow-x-auto"  */}
                 {/* <img src="/IMG_1593.PNG" className="h-72 object-cover" /> */}
-                <img src="/IMG_1594.PNG" className="h-72 object-cover" />
+                {/* <img src="/IMG_1594.PNG" className="h-72 object-cover" />
                 <img src="/IMG_1595.PNG" className="h-72 object-cover" />
                 <img src="/IMG_1599.PNG" className="h-72 object-cover" />
                 <img src="/IMG_1602.PNG" className="h-72 object-cover" />
-                <img src="/IMG_1605.PNG" className="h-72 object-cover" />
+                <img src="/IMG_1605.PNG" className="h-72 object-cover" /> */}
             </div>
         </div>
     )

@@ -7,37 +7,25 @@ export default function Events() {
         <div className="flex w-full flex-col">
             <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-black via-bgGray to-black">
                 <div className="w-2/3 flex-row text-center">
-                    <h1 className="bg text-7xl">Events</h1>
+                    <h1 className="bg text-7xl">Event 2024</h1>
 
-                    <p className="text-sm md:text-lg ">
-                        For the first time in the history of Pakistan, School of
-                        Mechanical and Manufacturing Engineering (SMME) brings
-                        to you the SMME Piston Cup!
-                    </p>
                     <p className="hidden text-sm md:block md:text-lg">
-                        The novel edition of Pakistan's first-ever collegiate
-                        level off-road racing competition is a dream-come-true
-                        for car enthusiasts and motorsports fans alike. The best
-                        and brightest from all over Pakistan would come together
-                        as college teams to compete in what would be the most
-                        intensely adrenaline-inducing University-level racing
-                        contest in Pakistan yet! The event itself is divided
-                        into three elaborate stages.
+                        The next edition of Pakistan's pioneering collegiate off-road racing competition is set to take motorsports enthusiasts to new heights. Car enthusiasts and racers from across the nation will once again unite, as college teams gear up to compete in what promises to be the most thrilling and adrenaline-fueled University-level racing event in Pakistan's history. The competition will unfold in three action-packed stages, pushing the limits of speed and skill like never before.
                     </p>
                 </div>
             </div>
 
             <div className="flex  w-full flex-col items-center bg-white p-10 ">
-                <h1 className="text-7xl text-primary">Event Plan</h1>
+                {/* <h1 className="text-7xl text-primary">Event Plan</h1>
                 <h3 className="text-4xl text-secondary">
                     13 Feb - 15 Feb 2026
                 </h3>
                 <EventsDates />
-                <Phase />
+                <Phase /> */}
                 <AutoShow />
                 <BrandLaunch />
             </div>
-            <div className="flex w-full flex-col items-center justify-center gap-4 pt-20 text-center">
+            {/* <div className="flex w-full flex-col items-center justify-center gap-4 pt-20 text-center">
                 <h1 className="text-lg text-primary md:text-3xl">
                     Well then, what are you waiting for?
                 </h1>
@@ -46,7 +34,7 @@ export default function Events() {
                         Register Now
                     </button>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }
