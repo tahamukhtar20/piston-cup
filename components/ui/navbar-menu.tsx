@@ -59,6 +59,46 @@ export const HoveredLink = ({ children, ...rest }: any) => {
 			</div>
 		)
 	}
+if (rest.href === "/events") {
+	return (
+		<div className="group relative z-10 capitalize text-neutral-200 transition-all duration-200 hover:scale-105 hover:text-white cursor-pointer">
+			<span>Events</span>
+
+			<h1
+				className={`cubic-bezier(0.4, 0, 0.2, 1) absolute h-1 rounded-full transition-all duration-300 group-hover:w-full ${
+					currentPage === rest.href ? "w-full bg-primary" : "w-0 bg-white"
+				}`}
+			/>
+
+			{/* Dropdown */}
+			<div className="absolute left-0 top-full mt-2 hidden w-40 rounded-md bg-black border border-white/20 shadow-lg group-hover:block overflow-hidden">
+
+				<Link
+					href="/events/2025"
+					className="block w-full px-4 py-2 text-neutral-200 hover:bg-white/10"
+				>
+					2025
+				</Link>
+
+				<Link
+					href="/events/2024"
+					className="block w-full px-4 py-2 text-neutral-200 hover:bg-white/10"
+				>
+					2024
+				</Link>
+
+				<Link
+					href="/events/2023"
+					className="block w-full px-4 py-2 text-neutral-200 hover:bg-white/10"
+				>
+					2023
+				</Link>
+
+			</div>
+		</div>
+	)
+}
+
 		return (
 
 			<Link
