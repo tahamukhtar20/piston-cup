@@ -34,6 +34,16 @@ export default function Events() {
                     </button>
                 </div>
             </div>
+            <div className="flex  w-full flex-col items-center bg-white p-10 ">
+                {/* <h1 className="text-7xl text-primary">Event Plan</h1>
+                <h3 className="text-4xl text-secondary">
+                    13 Feb - 15 Feb 2026
+                </h3>
+                <EventsDates />
+                <Phase /> */}
+                {/* <AutoShow /> */}
+                <BrandLaunch />
+            </div>
         </div>
     )
 }
@@ -56,27 +66,57 @@ const AutoShow = () => {
     )
 }
 const BrandLaunch = () => {
+    const images = [
+                "/IMG_9942.JPG",
+                "/IMG_9961.JPG",
+                "/IMG_9966.JPEG",
+                "/IMG_9967.JPEG",
+                "/IMG_9968.JPEG",
+                "/IMG_9969.JPEG",
+                "/IMG_9970.JPEG",
+                "/IMG_9971.JPEG",
+                "/IMG_9972.JPEG",
+                "/IMG_9973.JPEG",
+                "/IMG_9974.JPEG",
+                "/IMG_9975.JPEG",
+                "/IMG_9977.JPEG",
+                "/IMG_9978.JPEG",
+                "/IMG_9979.JPEG",
+                "/IMG_9980.JPEG",
+                "/IMG_9934.JPG",
+                "/IMG_9935.JPG",
+                "/IMG_9936.JPG",
+                "/IMG_9937.JPG",
+                "/IMG_9941.JPG"
+                ];
+    const mid = Math.ceil(images.length / 2);
     return (
-        <div className="mt-10  w-full md:px-20">
+        
+        <div className="mt-10 w-full md:px-20">
             <p className="w-full text-center text-6xl font-bold text-primary">
-                BRAND LAUNCH
+            BRAND LAUNCH
             </p>
-            <p className="text-base font-normal text-white"></p>
-            <div className="item-center my-10  flex h-72 w-full flex-row justify-center gap-2 overflow-x-auto">
-                <img src="/IMG_1586.PNG" className="h-72 object-cover" />
-                <img src="/IMG_1588.PNG" className="h-72 object-cover" />
-                <img src="/IMG_1589.PNG" className="h-72 object-cover" />
-                <img src="/IMG_1590.PNG" className="h-72 object-cover" />
-                <img src="/IMG_1591.PNG" className="h-72 object-cover" />
-                <img src="/IMG_1592.PNG" className="h-72 object-cover" />
+
+            {/* Row 1 */}
+            <div className="item-center my-10 flex h-72 w-full flex-row justify-center gap-2 overflow-x-auto">
+            {images.slice(0, mid).map((item) => (
+                <img
+                key={item}
+                src={item}
+                className="h-72 object-cover"
+                />
+            ))}
             </div>
-            <div className="item-center my-10  flex h-72 w-full flex-row justify-center gap-2 overflow-x-auto">
-                {/* <img src="/IMG_1593.PNG" className="h-72 object-cover" /> */}
-                <img src="/IMG_1594.PNG" className="h-72 object-cover" />
-                <img src="/IMG_1595.PNG" className="h-72 object-cover" />
-                <img src="/IMG_1599.PNG" className="h-72 object-cover" />
-                <img src="/IMG_1602.PNG" className="h-72 object-cover" />
-                <img src="/IMG_1605.PNG" className="h-72 object-cover" />
+
+            {/* Row 2 */}
+            <div className="item-center my-10 flex h-72 w-full flex-row justify-center gap-2 overflow-x-auto">
+            {images.slice(mid).map((item) => (
+                <img
+                key={item}
+                src={item}
+                className="h-72 object-cover"
+                />
+            ))}
             </div>
         </div>
     )
