@@ -17,9 +17,11 @@ export default function Events() {
             <div className="flex  w-full flex-col items-center bg-white p-10 ">
                 <h1 className="text-7xl text-primary">Event Plan</h1>
                 <h3 className="text-4xl text-secondary">
-                    13 Feb - 15 Feb 2026
+                    Postponed till further notice
                 </h3>
-                <EventsDates />
+                {/* <EventsDates /> */}
+                <br />
+                <br />
                 <Phase />
                 {/* <AutoShow />
                 <BrandLaunch /> */}
