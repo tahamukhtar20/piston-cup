@@ -39,6 +39,7 @@ export function Sponsors() {
 						</AccordionContent>
 					</AccordionItem>
 
+
 					<AccordionItem value="item-6">
 						<AccordionTrigger>Final Phase</AccordionTrigger>
 						<AccordionContent>
