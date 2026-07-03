@@ -27,7 +27,7 @@ export function Sponsors() {
 					<AccordionItem value="item-1">
 						<AccordionTrigger>Registrations Open</AccordionTrigger>
 						<AccordionContent>
-							Till 30 October 2026
+							Till 14 October 2026
 						</AccordionContent>
 					</AccordionItem>
 					<AccordionItem value="item-3">
@@ -35,7 +35,7 @@ export function Sponsors() {
 							Registerations Close
 						</AccordionTrigger>
 						<AccordionContent>
-							Extended till 30th October 2026
+							Extended till 14 October 2026
 						</AccordionContent>
 					</AccordionItem>
 
