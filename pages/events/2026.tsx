@@ -28,7 +28,7 @@ export default function Events() {
             </div>
             <div className="flex w-full flex-col items-center justify-center gap-4 pt-20 text-center">
                 <h1 className="text-lg text-primary md:text-3xl">
-                    Well then, what are you waiting for?
+                    Well then, what are you waiting for? Registrations Are Open till 14 August 2026
                 </h1>
                 <div className="mt-10 flex md:mt-0">
                     <button className="text-rg rounded-md border-2 border-primary p-2 transition-transform hover:scale-110 md:p-4 md:text-2xl">
