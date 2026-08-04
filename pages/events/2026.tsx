@@ -17,108 +17,65 @@ export default function Events() {
             <div className="flex  w-full flex-col items-center bg-white p-10 ">
                 <h1 className="text-7xl text-primary">Event Plan</h1>
                 <h3 className="text-4xl text-secondary">
-                    Mid of November 2026
+                    12th–13th November 2026
                 </h3>
                 {/* <EventsDates /> */}
                 <br />
                 <br />
                 <Phase />
-                {/* <AutoShow />
-                <BrandLaunch /> */}
             </div>
-            <div className="flex w-full flex-col items-center justify-center gap-4 pt-20 text-center">
-                <h1 className="text-lg text-primary md:text-3xl">
-                    Well then, what are you waiting for? Registrations Are Open till 14 August 2026
+            <div className="flex w-full flex-col items-center justify-center gap-6 py-16 text-center">
+                <h1 className="max-w-3xl text-lg text-primary md:text-3xl">
+                    Well then, what are you waiting for? Registrations Are Open till 30 August 2026
                 </h1>
-                <div className="mt-10 flex md:mt-0">
-                    <button className="text-rg rounded-md border-2 border-primary p-2 transition-transform hover:scale-110 md:p-4 md:text-2xl">
-                        Register Now
-                    </button>
-                </div>
+                <a
+                    href="https://forms.gle/v4gUpn4R25ZcYm2n7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rounded-md border-2 border-primary px-8 py-3 text-xl transition-transform hover:scale-110 md:text-2xl"
+                >
+                    Register Now
+                </a>
             </div>
             <div className="flex  w-full flex-col items-center bg-white p-10 ">
-                {/* <h1 className="text-7xl text-primary">Event Plan</h1>
-                <h3 className="text-4xl text-secondary">
-                    13 Feb - 15 Feb 2026
-                </h3>
-                <EventsDates />
-                <Phase /> */}
-                {/* <AutoShow /> */}
-                {/* <BrandLaunch /> */}
+                <AutoShow2026 />
             </div>
         </div>
     )
 }
-const AutoShow = () => {
-    return (
-        <div className="mt-10  w-full md:px-20">
-            <p className="w-full text-center text-6xl font-bold text-primary">
-                EXCLUSIVE AUTO SHOW
-            </p>
-            <p className="text-base font-normal text-white"></p>
-            <div className="item-center my-10  flex h-72 w-full flex-row justify-center gap-2 overflow-x-auto">
-                <img src="/newHighlight.jpeg" className="h-72 object-cover" />
-                <img src="/pic1.jpg" className="h-72 object-cover" />
-                <img src="/pic2.jpg" className="h-72 object-cover" />
-                <img src="/pic3.jpg" className="h-72 object-cover" />
-                <img src="/pic4.jpg" className="h-72 object-cover" />
-                <img src="/pic5.jpg" className="h-72 object-cover" />
-            </div>
-        </div>
-    )
-}
-const BrandLaunch = () => {
-    const images = [
-                "/IMG_9942.JPG",
-                "/IMG_9961.JPG",
-                "/IMG_9966.JPEG",
-                "/IMG_9967.JPEG",
-                "/IMG_9968.JPEG",
-                "/IMG_9969.JPEG",
-                "/IMG_9970.JPEG",
-                "/IMG_9971.JPEG",
-                "/IMG_9972.JPEG",
-                "/IMG_9973.JPEG",
-                "/IMG_9974.JPEG",
-                "/IMG_9975.JPEG",
-                "/IMG_9977.JPEG",
-                "/IMG_9978.JPEG",
-                "/IMG_9979.JPEG",
-                "/IMG_9980.JPEG",
-                "/IMG_9934.JPG",
-                "/IMG_9935.JPG",
-                "/IMG_9936.JPG",
-                "/IMG_9937.JPG",
-                "/IMG_9941.JPG"
-                ];
-    const mid = Math.ceil(images.length / 2);
-    return (
-        
-        <div className="mt-10 w-full md:px-20">
-            <p className="w-full text-center text-6xl font-bold text-primary">
-            BRAND LAUNCH
-            </p>
 
-            {/* Row 1 */}
-            <div className="item-center my-10 flex h-72 w-full flex-row justify-center gap-2 overflow-x-auto">
-            {images.slice(0, mid).map((item) => (
-                <img
-                key={item}
-                src={item}
-                className="h-72 object-cover"
-                />
-            ))}
-            </div>
 
-            {/* Row 2 */}
-            <div className="item-center my-10 flex h-72 w-full flex-row justify-center gap-2 overflow-x-auto">
-            {images.slice(mid).map((item) => (
-                <img
-                key={item}
-                src={item}
-                className="h-72 object-cover"
-                />
-            ))}
+
+const AutoShow2026 = () => {
+    return (
+        <div className="mt-16 w-full md:px-10">
+            <p className="w-full text-center text-6xl font-bold text-primary">
+                AUTOSHOW 2026
+            </p>
+            <div className="mx-auto mt-8 flex max-w-2xl flex-col items-center justify-center rounded-2xl border-2 border-dashed border-primary/40 bg-gray-50 px-8 py-16 text-center shadow-inner">
+                <svg
+                    className="mb-4 h-16 w-16 text-primary/40"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                >
+                    <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={1.5}
+                        d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"
+                    />
+                    <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={1.5}
+                        d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                </svg>
+                <p className="text-2xl font-bold text-primary">Stay Tuned!</p>
+                <p className="mt-2 text-lg text-secondary">
+                    Photos from the 2026 Autoshow will be available after the event.
+                </p>
             </div>
         </div>
     )
@@ -139,14 +96,14 @@ const Phase = () => {
                         Beginning from the 5th of August 2025, the SMME Piston Cup
                         team will once again reach out to universities nationwide,
                         inviting the most skilled and talented students to register for
-                        the third edition of this groundbreaking competition. Our goal
+                        the fourth edition of this groundbreaking competition. Our goal
                         remains to offer young innovators a platform to showcase their
                         creativity, engineering skills, and passion for motorsports.
                         <br />
-                        After the completion of the registration process, the
+                        After the completion of the registration process (deadline: 30 August 2026), the
                         participating teams will prepare a business
                         presentation. Moreover, a design presentation will be
-                        held along with the track inauguration on 13th of February.
+                        held along with the track inauguration.
                     </p>
                 </div>
             </div>
@@ -167,7 +124,8 @@ const Phase = () => {
                         design.
                         <br />
                         <br />
-                        The race event will be held in the February of 2026 when
+                        The race event will be held on the{" "}
+                        <strong>12th–13th of November 2026</strong> when
                         the hard work and innovation of the participating teams
                         will culminate in a breath-taking competition.
                     </p>

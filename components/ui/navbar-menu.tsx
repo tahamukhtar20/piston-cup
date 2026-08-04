@@ -24,108 +24,99 @@ export const Menu = ({ children }: { children: React.ReactNode }) => {
 export const HoveredLink = ({ children, ...rest }: any) => {
 	const router = useRouter()
 	const currentPage = router.pathname
-	console.log(rest.href)
+
 	if (rest.href === "/ruleBook") {
-		console.log("=>",)
-		return(
-			<Link href="" className="group relative z-10 capitalize text-neutral-200 transition-all duration-200 hover:scale-105 hover:text-white" onClick={()=>{window.open("/rulebook.pdf",'_blank')}}  >
-      			Rulebook
-				<h1 className={`cubic-bezier(0.4, 0, 0.2, 1) absolute h-1 rounded-full transition-all duration-300 group-hover:w-full ${currentPage === rest.href ? "w-full bg-primary" : "w-0 bg-white"}`}/> 
-   			 </Link>
-		)
-	}
-		if (rest.href === "/magazine") {
 		return (
-			<div className="group relative z-10 capitalize text-neutral-200 transition-all duration-200 hover:scale-105 hover:text-white cursor-pointer">
-				<span>Magazine</span>
-				<h1
-					className={`cubic-bezier(0.4, 0, 0.2, 1) absolute h-1 rounded-full transition-all duration-300 group-hover:w-full ${currentPage === rest.href ? "w-full bg-primary" : "w-0 bg-white"
-						}`}
-				/>
-				<div className="absolute left-0 top-full mt-2 hidden w-40 rounded-md bg-black border border-white/20 shadow-lg group-hover:block overflow-hidden ">
-					<button
-						onClick={() => window.open("/magazines-2024.pdf", "_blank")}
-						className="block w-full px-4 py-2 text-left text-neutral-200 hover:bg-white/10"
-					>
-						2024 Edition
-					</button>
-					<button
-						onClick={() => window.open("/magazines-2023.pdf", "_blank")}
-						className="block w-full px-4 py-2 text-left text-neutral-200 hover:bg-white/10"
-					>
-						2023 Edition
-					</button>
-				</div>
-			</div>
-		)
-	}
-if (rest.href === "/events") {
-	return (
-		<div className="group relative z-10 capitalize text-neutral-200 transition-all duration-200 hover:scale-105 hover:text-white cursor-pointer">
-			<span>Events</span>
-
-			<h1
-				className={`cubic-bezier(0.4, 0, 0.2, 1) absolute h-1 rounded-full transition-all duration-300 group-hover:w-full ${
-					currentPage === rest.href ? "w-full bg-primary" : "w-0 bg-white"
-				}`}
-			/>
-
-			{/* Dropdown */}
-			<div className="absolute left-0 top-full mt-2 hidden w-40 rounded-md bg-black border border-white/20 shadow-lg group-hover:block overflow-hidden">
-				
-				<Link
-					href="/events/2026"
-					className="block w-full px-4 py-2 text-neutral-200 hover:bg-white/10"
-				>
-					2026
-				</Link>
-
-				<Link
-					href="/events/2025"
-					className="block w-full px-4 py-2 text-neutral-200 hover:bg-white/10"
-				>
-					2025
-				</Link>
-
-				<Link
-					href="/events/2024"
-					className="block w-full px-4 py-2 text-neutral-200 hover:bg-white/10"
-				>
-					2024
-				</Link>
-
-				<Link
-					href="/events/2023"
-					className="block w-full px-4 py-2 text-neutral-200 hover:bg-white/10"
-				>
-					2023
-				</Link>
-
-			</div>
-		</div>
-	)
-}
-
-		return (
-
 			<Link
-				{...rest}
+				href="#"
 				className="group relative z-10 capitalize text-neutral-200 transition-all duration-200 hover:scale-105 hover:text-white"
+				onClick={(e) => { e.preventDefault(); alert('The 2026 Rulebook will be available soon. Stay tuned!') }}
 			>
-				{children}
-				<h1
-					className={`cubic-bezier(0.4, 0, 0.2, 1) absolute
-			h-1 rounded-full transition-all duration-300 group-hover:w-full
-			${currentPage === rest.href ? "w-full bg-primary" : "w-0 bg-white"}
-			`}
-				/> 
+				Rulebook
+				<h1 className={`cubic-bezier(0.4, 0, 0.2, 1) absolute h-1 rounded-full transition-all duration-300 group-hover:w-full ${currentPage === rest.href ? "w-full bg-primary" : "w-0 bg-white"}`} />
 			</Link>
 		)
 	}
 
-	
+	if (rest.href === "/magazine") {
+		return (
+			<div className="group relative z-10 cursor-pointer capitalize text-neutral-200 transition-all duration-200 hover:text-white">
+				<span>Magazine</span>
+				<h1
+					className={`cubic-bezier(0.4, 0, 0.2, 1) absolute h-1 rounded-full transition-all duration-300 group-hover:w-full ${currentPage === rest.href ? "w-full bg-primary" : "w-0 bg-white"}`}
+				/>
+				{/* Invisible bridge so hover doesn't break crossing the gap */}
+				<div className="absolute left-0 top-full hidden w-44 pt-2 group-hover:block">
+					<div className="rounded-md border border-white/20 bg-black shadow-lg overflow-hidden">
+						<button
+							onClick={() => alert('The 2026 Magazine will be available soon. Stay tuned!')}
+							className="block w-full px-4 py-2 text-left text-neutral-200 hover:bg-white/10"
+						>
+							2026 Edition
+						</button>
+						<button
+							onClick={() => window.open("/magazines-2024.pdf", "_blank")}
+							className="block w-full px-4 py-2 text-left text-neutral-200 hover:bg-white/10"
+						>
+							2024 Edition
+						</button>
+						<button
+							onClick={() => window.open("/magazines-2023.pdf", "_blank")}
+							className="block w-full px-4 py-2 text-left text-neutral-200 hover:bg-white/10"
+						>
+							2023 Edition
+						</button>
+					</div>
+				</div>
+			</div>
+		)
+	}
 
-export const links = ["home", "about", "events", "track", "register","ruleBook","magazine"]
+	if (rest.href === "/events") {
+		return (
+			<div className="group relative z-10 cursor-pointer capitalize text-neutral-200 transition-all duration-200 hover:text-white">
+				<span>Events</span>
+				<h1
+					className={`cubic-bezier(0.4, 0, 0.2, 1) absolute h-1 rounded-full transition-all duration-300 group-hover:w-full ${
+						currentPage === rest.href ? "w-full bg-primary" : "w-0 bg-white"
+					}`}
+				/>
+				{/* Invisible bridge so hover doesn't break crossing the gap */}
+				<div className="absolute left-0 top-full hidden w-40 pt-2 group-hover:block">
+					<div className="rounded-md border border-white/20 bg-black shadow-lg overflow-hidden">
+						<Link href="/events/2026" className="block w-full px-4 py-2 text-neutral-200 hover:bg-white/10">
+							2026
+						</Link>
+						<Link href="/events/2025" className="block w-full px-4 py-2 text-neutral-200 hover:bg-white/10">
+							2025
+						</Link>
+						<Link href="/events/2024" className="block w-full px-4 py-2 text-neutral-200 hover:bg-white/10">
+							2024
+						</Link>
+						<Link href="/events/2023" className="block w-full px-4 py-2 text-neutral-200 hover:bg-white/10">
+							2023
+						</Link>
+					</div>
+				</div>
+			</div>
+		)
+	}
+
+	return (
+		<Link
+			{...rest}
+			className="group relative z-10 capitalize text-neutral-200 transition-all duration-200 hover:scale-105 hover:text-white"
+		>
+			{children}
+			<h1
+				className={`cubic-bezier(0.4, 0, 0.2, 1) absolute h-1 rounded-full transition-all duration-300 group-hover:w-full ${currentPage === rest.href ? "w-full bg-primary" : "w-0 bg-white"}`}
+			/>
+		</Link>
+	)
+}
+
+
+export const links = ["home", "about", "events", "track", "register", "ruleBook", "magazine"]
 
 export const linkRes = (link: string) => {
 	if (link === "home") return ""
@@ -140,7 +131,9 @@ export const Header = () => {
 					link === "register" ? (
 						<HoveredLink 
 							key={link}
-							href="https://docs.google.com/forms/d/e/1FAIpQLSe1IiWYTljtV9eNcXCHv_Bsn6pEXa9M0eGhM8N07tRLuXTA0g/viewform"
+							href="https://forms.gle/v4gUpn4R25ZcYm2n7"
+							target="_blank"
+							rel="noopener noreferrer"
 						>
 							{link}
 						</HoveredLink>

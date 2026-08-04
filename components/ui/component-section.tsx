@@ -60,13 +60,13 @@ export function ContactSection({
 
 					<div className="flex  justify-between px-1">
 						<div >
-						<h1 className="text-xl text-gray-400">Shamir Ahmad</h1>
-						<p className="text-xl text-gray-400 ">+92 342 7763771</p>
+						<h1 className="text-xl text-gray-400">Shaheer Kashif</h1>
+						<p className="text-xl text-gray-400 ">+92 311 6982206</p>
 
 						</div>
 						<div>
-						<h1 className="text-xl text-gray-400">Faraz Haider</h1>
-						<p className="text-xl text-gray-400">+92 313 4493457</p>	
+						<h1 className="text-xl text-gray-400">Abdullah Qureshi</h1>
+						<p className="text-xl text-gray-400">+92 326 3963094</p>	
 						</div>						
 						
 					</div>
