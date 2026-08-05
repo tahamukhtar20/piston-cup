@@ -56,4 +56,6 @@ export function Sponsors() {
 	)
 }
 
-const testimonials = ["/sponsors/1.png", "/sponsors/2.png"]
+const baseSponsors = ["/sponsors/1.png", "/sponsors/2.png"]
+// Repeat them enough times to overflow large desktop screens so the infinite scroll loops seamlessly
+const testimonials = [...baseSponsors, ...baseSponsors, ...baseSponsors, ...baseSponsors]
