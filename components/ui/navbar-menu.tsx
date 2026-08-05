@@ -129,7 +129,7 @@ export const HoveredLink = ({ children, ...rest }: any) => {
 }
 
 
-export const links = ["home", "about", "events", "track", "register", "ruleBook", "magazine", "sponsorship"]
+export const links = ["home", "about", "track", "register", "ruleBook", "sponsorship", "magazine", "events"]
 
 export const linkRes = (link: string) => {
 	if (link === "home") return ""
