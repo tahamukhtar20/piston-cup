@@ -30,7 +30,7 @@ export const HoveredLink = ({ children, ...rest }: any) => {
 			<Link
 				href="#"
 				className="group relative z-10 capitalize text-neutral-200 transition-all duration-200 hover:scale-105 hover:text-white"
-				onClick={(e) => { e.preventDefault(); alert('The 2026 Rulebook will be available soon. Stay tuned!') }}
+				onClick={(e) => { e.preventDefault(); window.open("/rulebook.pdf", "_blank") }}
 			>
 				Rulebook
 				<h1 className={`cubic-bezier(0.4, 0, 0.2, 1) absolute h-1 rounded-full transition-all duration-300 group-hover:w-full ${currentPage === rest.href ? "w-full bg-primary" : "w-0 bg-white"}`} />
