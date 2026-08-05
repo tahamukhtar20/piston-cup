@@ -14,7 +14,7 @@ export const Menu = ({ children }: { children: React.ReactNode }) => {
 				stiffness: 260,
 				damping: 20
 			}}
-			className="flex max-w-[95vw] overflow-x-auto [&::-webkit-scrollbar]:hidden items-center justify-start gap-4 sm:gap-6 rounded-full border border-white/[0.2] bg-black px-6 py-4 shadow-input transition-all duration-200"
+			className="flex max-w-[95vw] flex-wrap items-center justify-center gap-4 sm:gap-6 rounded-[2rem] border border-white/[0.2] bg-black px-6 py-4 shadow-input transition-all duration-200"
 		>
 			{children}
 		</motion.nav>
