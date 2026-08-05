@@ -13,6 +13,10 @@ const config = {
 		"./src/**/*.{ts,tsx}"
 	],
 	prefix: "",
+	safelist: [
+		"animate-scroll",
+		"hover:[animation-play-state:paused]"
+	],
 	theme: {
 		container: {
 			center: true,
