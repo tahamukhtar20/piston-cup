@@ -14,7 +14,7 @@ export const Menu = ({ children }: { children: React.ReactNode }) => {
 				stiffness: 260,
 				damping: 20
 			}}
-			className="flex w-fit items-center justify-end space-x-4 rounded-full border border-white/[0.2] bg-black px-8 py-4 shadow-input transition-all duration-200"
+			className="flex max-w-[95vw] overflow-x-auto [&::-webkit-scrollbar]:hidden items-center justify-start gap-4 sm:gap-6 rounded-full border border-white/[0.2] bg-black px-6 py-4 shadow-input transition-all duration-200"
 		>
 			{children}
 		</motion.nav>
@@ -24,6 +24,19 @@ export const Menu = ({ children }: { children: React.ReactNode }) => {
 export const HoveredLink = ({ children, ...rest }: any) => {
 	const router = useRouter()
 	const currentPage = router.pathname
+
+	if (rest.href === "/sponsorship") {
+		return (
+			<Link
+				href="#"
+				className="group relative z-10 capitalize text-neutral-200 whitespace-nowrap transition-all duration-200 hover:scale-105 hover:text-white"
+				onClick={(e) => { e.preventDefault(); alert("We'll be starting sponsorship collaboration soon") }}
+			>
+				Sponsorship
+				<h1 className={`cubic-bezier(0.4, 0, 0.2, 1) absolute h-1 rounded-full transition-all duration-300 group-hover:w-full ${currentPage === rest.href ? "w-full bg-primary" : "w-0 bg-white"}`} />
+			</Link>
+		)
+	}
 
 	if (rest.href === "/ruleBook") {
 		return (
@@ -105,7 +118,7 @@ export const HoveredLink = ({ children, ...rest }: any) => {
 	return (
 		<Link
 			{...rest}
-			className="group relative z-10 capitalize text-neutral-200 transition-all duration-200 hover:scale-105 hover:text-white"
+			className="group relative z-10 capitalize whitespace-nowrap text-neutral-200 transition-all duration-200 hover:scale-105 hover:text-white"
 		>
 			{children}
 			<h1
@@ -116,7 +129,7 @@ export const HoveredLink = ({ children, ...rest }: any) => {
 }
 
 
-export const links = ["home", "about", "events", "track", "register", "ruleBook", "magazine"]
+export const links = ["home", "about", "events", "track", "register", "ruleBook", "magazine", "sponsorship"]
 
 export const linkRes = (link: string) => {
 	if (link === "home") return ""
@@ -125,7 +138,7 @@ export const linkRes = (link: string) => {
 
 export const Header = () => {
 	return (
-		<header className="fixed left-0 top-0 z-[9999] flex w-full items-center justify-center bg-inherit text-xl">
+		<header className="fixed left-0 top-0 z-[9999] flex w-full items-center justify-center bg-inherit text-base md:text-xl">
 			<Menu>
 				{links.map(link =>
 					link === "register" ? (
