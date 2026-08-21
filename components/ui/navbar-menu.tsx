@@ -142,12 +142,7 @@ export const Header = () => {
 			<Menu>
 				{links.map(link =>
 					link === "register" ? (
-						<HoveredLink 
-							key={link}
-							href="https://forms.gle/v4gUpn4R25ZcYm2n7"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
+						<HoveredLink key={link} href="/register">
 							{link}
 						</HoveredLink>
 					) : (
