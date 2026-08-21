@@ -5,7 +5,7 @@ export function RegistrationFee() {
 	const EXTRA_PER_MEMBER = 3000
 	const BASE_LIMIT = 15
 	const MAX_MEMBERS = 20
-	const MIN_MEMBERS = 3
+	const MIN_MEMBERS = 4
 
 	const [members, setMembers] = useState(MIN_MEMBERS)
 
@@ -47,12 +47,12 @@ export function RegistrationFee() {
 						<h2 className="mb-1 text-lg font-semibold uppercase tracking-wide text-yellow-400">
 							Base Team
 						</h2>
-						<p className="mb-4 text-sm text-neutral-400">3 – 15 members</p>
+						<p className="mb-4 text-sm text-neutral-400">4 – 15 members</p>
 						<div className="flex items-end gap-1">
 							<span className="text-4xl font-extrabold text-white">PKR 27,000</span>
 						</div>
 						<p className="mt-3 text-sm text-neutral-400">
-							Flat rate for any team size up to 15 members. Minimum 3 members required.
+							Flat rate for any team size up to 15 members. Minimum 4 members required.
 						</p>
 					</div>
 
@@ -118,7 +118,7 @@ export function RegistrationFee() {
 
 				{/* Note */}
 				<p className="mt-8 text-center text-sm text-neutral-500">
-					* Maximum 20 members allowed per team &nbsp;·&nbsp; Minimum 3 members required
+					* Maximum 20 members allowed per team &nbsp;·&nbsp; Minimum 4 members required
 				</p>
 			</div>
 		</section>
