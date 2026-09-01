@@ -40,7 +40,7 @@ export default function TrackDetails() {
 			</div>
 
 			<Image
-				src="/spc-track.png"
+				src="/spc-track-2026.png"
 				alt="SPC 2026 Track Map"
 				width={1000}
 				height={500}
