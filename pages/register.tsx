@@ -15,7 +15,7 @@ function calculateFee(count: number) {
 }
 
 const keyDates = [
-	{ date: "30th August 2026",     label: "Registration Deadline",         desc: "Last day to submit your team registration",         urgent: true  },
+	{ date: "15th September 2026",     label: "Registration Deadline",         desc: "Last day to submit your team registration",         urgent: true  },
 	{ date: "30th September 2026",  label: "CAD Model Submission",           desc: "Submit your final CAD model for technical review",   urgent: false },
 	{ date: "15th October 2026",    label: "Design Report Submission",       desc: "Technical design report submission deadline",        urgent: false },
 	{ date: "12th November 2026",   label: "Business Proposal Presentation", desc: "Present your business proposal to the judging panel", urgent: false },
@@ -56,7 +56,7 @@ export default function RegisterPage() {
 						{/* Deadline badge — placed naturally here, not as an intrusive top banner */}
 						<div className="mx-auto mt-6 inline-flex items-center gap-2 rounded-full border border-red-500/40 bg-red-950/30 px-5 py-2">
 							<span className="h-2 w-2 animate-pulse rounded-full bg-red-500" />
-							<span className="text-sm font-semibold text-red-400">Registration Deadline: 30th August 2026</span>
+							<span className="text-sm font-semibold text-red-400">Registration Deadline: 15th September 2026</span>
 						</div>
 
 						{/* Stats */}
@@ -232,7 +232,7 @@ export default function RegisterPage() {
 							Secure Your Spot Today
 						</h2>
 						<p className="mx-auto mt-4 max-w-lg text-base font-normal text-neutral-300">
-							Limited slots available. Register before <strong className="text-white">30th August 2026</strong> to compete at Pakistan&apos;s biggest off-road racing event.
+							Limited slots available. Register before <strong className="text-white">15th September 2026</strong> to compete at Pakistan&apos;s biggest off-road racing event.
 						</p>
 						<div className="mt-10 flex flex-wrap justify-center gap-4">
 							<a
