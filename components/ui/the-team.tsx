@@ -19,7 +19,7 @@ export default function TheTeam() {
 		{
 			name: "Rehan Iqbal",
 			role: "President",
-			image: "/team/Rehan Iqbal.jpg",
+			image: "/team/rehan-iqbal.jpg",
 			initials: "RI",
 			gradient: "from-orange-600 to-red-700",
 			description:
@@ -28,7 +28,7 @@ export default function TheTeam() {
 		{
 			name: "Mahad Nazir",
 			role: "Vice President Resources",
-			image: "/team/Mahad Nazir.jpg",
+			image: "/team/mahad-nazir.jpg",
 			initials: "MN",
 			gradient: "from-blue-600 to-indigo-700",
 			description:
@@ -37,7 +37,7 @@ export default function TheTeam() {
 		{
 			name: "Kashmala Nadeem",
 			role: "Vice President Media",
-			image: "/team/Kashmala Nadeem.jpg",
+			image: "/team/kashmala-nadeem.jpg",
 			initials: "KN",
 			gradient: "from-purple-600 to-pink-600",
 			description:
@@ -46,7 +46,7 @@ export default function TheTeam() {
 		{
 			name: "Masab Ali",
 			role: "Vice President Operations",
-			image: "/team/Masab Ali.jpg",
+			image: "/team/masab-ali.jpg",
 			initials: "MA",
 			gradient: "from-emerald-600 to-teal-700",
 			description:
@@ -55,7 +55,7 @@ export default function TheTeam() {
 		{
 			name: "Abdullah Qureshi",
 			role: "Vice President Technical",
-			image: "/team/Abdullah Qureshi.jpg",
+			image: "/team/abdullah-qureshi.jpg",
 			initials: "AQ",
 			gradient: "from-cyan-600 to-blue-700",
 			description:
@@ -64,7 +64,7 @@ export default function TheTeam() {
 		{
 			name: "Shaheer Kashif",
 			role: "Vice President Outreach",
-			image: "/team/Shaheer Kashif.jpg",
+			image: "/team/shaheer-kashif.jpg",
 			initials: "SK",
 			gradient: "from-yellow-500 to-orange-600",
 			description:
