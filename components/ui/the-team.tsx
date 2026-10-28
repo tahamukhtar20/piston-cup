@@ -1,6 +1,7 @@
 type TeamMember = {
 	name: string
 	role: string
+	image: string
 	initials: string
 	gradient: string
 	description: string
@@ -18,6 +19,7 @@ export default function TheTeam() {
 		{
 			name: "Rehan Iqbal",
 			role: "President",
+			image: "/team/Rehan Iqbal.jpg",
 			initials: "RI",
 			gradient: "from-orange-600 to-red-700",
 			description:
@@ -26,42 +28,47 @@ export default function TheTeam() {
 		{
 			name: "Mahad Nazir",
 			role: "Vice President Resources",
+			image: "/team/Mahad Nazir.jpg",
 			initials: "MN",
 			gradient: "from-blue-600 to-indigo-700",
 			description:
 				"From SEECS Batch 2024, he is serving as Vice President Resources for SMME Piston Cup 2026, overseeing finance, logistics, inventory, procurement, and resource planning to ensure smooth event operations."
 		},
 		{
-			name: "Masab Ali",
-			role: "Vice President Operations",
-			initials: "MA",
-			gradient: "from-emerald-600 to-teal-700",
-			description:
-				"From SMME Batch 2024, he is serving as Vice President Operations for SMME Piston Cup 2026, managing event execution, operational planning, and cross-team coordination to deliver a seamless experience."
-		},
-		{
 			name: "Kashmala Nadeem",
 			role: "Vice President Media",
+			image: "/team/Kashmala Nadeem.jpg",
 			initials: "KN",
 			gradient: "from-purple-600 to-pink-600",
 			description:
 				"From IESE Batch 2023, she is serving as Vice President Media for SMME Piston Cup 2026, leading branding, content creation, digital marketing, and visual storytelling across all media platforms."
 		},
 		{
-			name: "Shaheer Kashif",
-			role: "Vice President Outreach",
-			initials: "SK",
-			gradient: "from-yellow-500 to-orange-600",
+			name: "Masab Ali",
+			role: "Vice President Operations",
+			image: "/team/Masab Ali.jpg",
+			initials: "MA",
+			gradient: "from-emerald-600 to-teal-700",
 			description:
-				"From NBS Batch 2023, he is serving as Vice President Outreach for SMME Piston Cup 2026, building strategic partnerships, managing stakeholder relations, and expanding the event's external reach and impact."
+				"From SMME Batch 2024, he is serving as Vice President Operations for SMME Piston Cup 2026, managing event execution, operational planning, and cross-team coordination to deliver a seamless experience."
 		},
 		{
 			name: "Abdullah Qureshi",
 			role: "Vice President Technical",
+			image: "/team/Abdullah Qureshi.jpg",
 			initials: "AQ",
 			gradient: "from-cyan-600 to-blue-700",
 			description:
 				"From SMME Batch 2023, he is serving as Vice President Technical for SMME Piston Cup 2026, spearheading technical planning, innovation, and engineering excellence while ensuring successful competition management."
+		},
+		{
+			name: "Shaheer Kashif",
+			role: "Vice President Outreach",
+			image: "/team/Shaheer Kashif.jpg",
+			initials: "SK",
+			gradient: "from-yellow-500 to-orange-600",
+			description:
+				"From NBS Batch 2023, he is serving as Vice President Outreach for SMME Piston Cup 2026, building strategic partnerships, managing stakeholder relations, and expanding the event's external reach and impact."
 		}
 	]
 
@@ -117,15 +124,25 @@ export default function TheTeam() {
 	)
 }
 
-function TeamCard({ name, role, initials, gradient, description }: TeamMember) {
+function TeamCard({ name, role, image, initials, gradient, description }: TeamMember) {
 	return (
 		<div className="group relative overflow-hidden rounded-xl bg-white shadow-lg transition-all duration-300 hover:shadow-2xl">
-			{/* Placeholder avatar */}
+			{/* Photo */}
 			<div className={`relative flex aspect-[4/5] w-full items-center justify-center bg-gradient-to-br ${gradient}`}>
-				<span className="text-7xl font-bold text-white/90 select-none">{initials}</span>
-				{/* Photo coming soon badge */}
-				<span className="absolute bottom-3 right-3 rounded-full bg-black/40 px-2 py-1 text-xs text-white/70 backdrop-blur-sm">
-					Photo coming soon
+				<img
+					src={image}
+					alt={name}
+					className="h-full w-full object-cover object-top"
+					onError={(e) => {
+						const target = e.currentTarget as HTMLImageElement
+						target.style.display = "none"
+						const fallback = target.nextElementSibling as HTMLElement | null
+						if (fallback) fallback.style.display = "flex"
+					}}
+				/>
+				{/* Fallback initials (hidden when image loads) */}
+				<span className="hidden absolute inset-0 items-center justify-center text-7xl font-bold text-white/90 select-none" style={{display: "none"}}>
+					{initials}
 				</span>
 				{/* Dark gradient at bottom */}
 				<div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/70 to-transparent" />
