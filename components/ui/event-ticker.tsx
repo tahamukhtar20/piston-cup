@@ -11,22 +11,33 @@ const scheduleItems = [
 	"🍽️  TOMORROW DAY 1  ·  19:30  ·  Formal Dinner & Awards  ·  Piston Cup Track",
 	"🏁  DAY 2  ·  20 NOV  ·  09:00  ·  Endurance Testing  ·  Piston Cup Track",
 	"🏆  DAY 2  ·  20 NOV  ·  15:00  ·  Closing Ceremony  ·  Piston Cup Track",
-	"👉  14 Teams Competing  ·  Visit Events 2026 for full schedule",
+	"🚗  14 Teams Competing  ·  Visit Events 2026 for full schedule",
 ]
 
 export function EventTicker() {
 	return (
-		<div className="event-ticker fixed bottom-0 left-0 z-50 w-full border-t border-primary/60 bg-black/90 py-1 backdrop-blur-md shadow-[0_-4px_30px_rgba(255,80,0,0.2)]">
-			<div className="flex items-center">
-				{/* Flashing LIVE NOW label */}
-				<div className="z-10 shrink-0 flex items-center gap-1.5 bg-primary px-3 py-1 shadow-lg">
-					<span className="inline-block h-2 w-2 rounded-full bg-white animate-ping" />
+		<div className="event-ticker fixed bottom-3 left-1/2 z-50 w-[96%] max-w-5xl -translate-x-1/2">
+			{/* Outer glow ring */}
+			<div className="absolute inset-0 rounded-full bg-primary/20 blur-md" />
+
+			{/* Main pill */}
+			<div className="relative flex items-center overflow-hidden rounded-full border border-white/10 bg-black/85 shadow-[0_4px_32px_rgba(220,60,0,0.35)] backdrop-blur-xl">
+
+				{/* LIVE NOW badge */}
+				<div className="z-10 shrink-0 flex items-center gap-2 rounded-full bg-gradient-to-r from-primary to-orange-500 mx-1.5 my-1 px-4 py-1.5 shadow-md">
+					<span className="relative flex h-2 w-2">
+						<span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white opacity-75" />
+						<span className="relative inline-flex h-2 w-2 rounded-full bg-white" />
+					</span>
 					<span className="text-[10px] font-black tracking-widest text-white uppercase whitespace-nowrap">
-						Live&nbsp;Now
+						Live Now
 					</span>
 				</div>
 
-				{/* Scrolling ticker — right direction */}
+				{/* Thin divider */}
+				<div className="h-5 w-px shrink-0 bg-white/20" />
+
+				{/* Scrolling ticker — right to left */}
 				<InfiniteMovingCards
 					items={scheduleItems}
 					direction="left"

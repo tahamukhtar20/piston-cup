@@ -12,7 +12,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 			<Banner />
 			<Header />
 			<main
-				className={`flex min-h-[calc(100vh-250px)] flex-col items-center justify-between pb-10`}
+				className={`flex min-h-[calc(100vh-250px)] flex-col items-center justify-between pb-16`}
 			>
 				{children}
 			</main>
