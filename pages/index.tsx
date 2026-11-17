@@ -60,7 +60,7 @@ function LiveEventBanner() {
 	]
 
 	return (
-		<section className="relative w-full bg-black px-4 py-16 pb-24 overflow-hidden">
+		<section className="relative w-full bg-black px-4 py-10 pb-16 mb-4 overflow-hidden">
 			{/* Background glow */}
 			<div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(220,60,0,0.12),transparent_70%)]" />
 
@@ -68,15 +68,15 @@ function LiveEventBanner() {
 			<div className="relative mx-auto mb-10 max-w-5xl text-center">
 				<div className="mb-3 inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-5 py-2">
 					<span className="inline-block h-2.5 w-2.5 rounded-full bg-primary animate-ping" />
-					<span className="text-sm font-bold uppercase tracking-widest text-primary">Event Underway</span>
+					<span className="text-xs font-bold uppercase tracking-widest text-orange-400">Event Underway</span>
 				</div>
-				<h2 className="text-4xl font-black text-white md:text-6xl">
+				<h2 className="text-3xl font-black text-white md:text-5xl">
 					SPC 2026 is{" "}
 					<span className="bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">
 						Happening Now
 					</span>
 				</h2>
-				<p className="mt-3 text-lg text-neutral-400">
+				<p className="mt-2 text-base text-neutral-300">
 					18 – 20 November 2026 · NUST, Islamabad
 				</p>
 			</div>
@@ -86,13 +86,13 @@ function LiveEventBanner() {
 				{days.map((day, i) => (
 					<div
 						key={day.label}
-						className={`relative rounded-2xl border ${day.accent} bg-gradient-to-br ${day.color} p-6 shadow-xl`}
+						className={`relative rounded-2xl border ${day.accent} bg-gradient-to-br ${day.color} p-4 shadow-xl`}
 						style={{ animationDelay: `${i * 0.15}s` }}
 					>
 						{/* Day badge */}
 						<div className="mb-4 flex items-center gap-3">
 							<span className={`inline-block h-3 w-3 rounded-full ${day.dot} ${i === 0 ? "animate-ping" : ""}`} />
-							<span className="text-xl font-black text-white">{day.label}</span>
+							<span className="text-lg font-black text-white">{day.label}</span>
 							<span className="ml-auto rounded-full bg-white/10 px-3 py-0.5 text-sm font-semibold text-white/80">
 								{day.date}
 							</span>

@@ -16,12 +16,12 @@ const scheduleItems = [
 
 export function EventTicker() {
 	return (
-		<div className="event-ticker fixed bottom-0 left-0 z-50 w-full border-t-2 border-primary/60 bg-black/90 py-2 backdrop-blur-md shadow-[0_-4px_30px_rgba(255,80,0,0.2)]">
+		<div className="event-ticker fixed bottom-0 left-0 z-50 w-full border-t border-primary/60 bg-black/90 py-1 backdrop-blur-md shadow-[0_-4px_30px_rgba(255,80,0,0.2)]">
 			<div className="flex items-center">
 				{/* Flashing LIVE NOW label */}
-				<div className="z-10 shrink-0 flex items-center gap-2 bg-primary px-4 py-2 shadow-lg">
-					<span className="inline-block h-2.5 w-2.5 rounded-full bg-white animate-ping" />
-					<span className="text-xs font-black tracking-widest text-white uppercase whitespace-nowrap">
+				<div className="z-10 shrink-0 flex items-center gap-1.5 bg-primary px-3 py-1 shadow-lg">
+					<span className="inline-block h-2 w-2 rounded-full bg-white animate-ping" />
+					<span className="text-[10px] font-black tracking-widest text-white uppercase whitespace-nowrap">
 						Live&nbsp;Now
 					</span>
 				</div>
