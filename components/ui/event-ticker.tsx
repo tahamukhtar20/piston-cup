@@ -30,7 +30,7 @@ export function EventTicker() {
 				<InfiniteMovingCards
 					items={scheduleItems}
 					direction="right"
-					speed="normal"
+					speed="slow"
 					pauseOnHover={true}
 					className="flex-1"
 				/>
