@@ -29,7 +29,7 @@ export function EventTicker() {
 				{/* Scrolling ticker — right direction */}
 				<InfiniteMovingCards
 					items={scheduleItems}
-					direction="right"
+					direction="left"
 					speed="slow"
 					pauseOnHover={true}
 					className="flex-1"

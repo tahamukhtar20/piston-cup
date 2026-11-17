@@ -12,12 +12,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 			<Banner />
 			<Header />
 			<main
-				className={`flex min-h-[calc(100vh-250px)] flex-col items-center justify-between`}
+				className={`flex min-h-[calc(100vh-250px)] flex-col items-center justify-between pb-10`}
 			>
 				{children}
 			</main>
 			<Button
-				className="fixed bottom-10 right-10 z-50 aspect-square h-14 rounded-full"
+				className="fixed bottom-16 right-10 z-50 aspect-square h-14 rounded-full"
 				onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
 			>
 				<ArrowUp size={24} />
